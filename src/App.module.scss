@@ -1,0 +1,30 @@
+@import "./styles/global.scss";
+
+.root {
+  display: flex;
+  color: $color-dark;
+
+  .student {
+    width: 550px;
+    border-right-width: 5px;
+    border-right-style: solid;
+    border-right-color: $color-dark;
+
+    .title {
+      @extend .header;
+    }
+  }
+  .teacher {
+    width: 100%;
+    height: 100vh;
+
+    .title {
+      @extend .header;
+    }
+
+    .app {
+      height: 90%;
+      overflow: auto;
+    }
+  }
+}

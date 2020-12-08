@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  background: rgba(#0652dd, 0.95);
+
+  .navLinks {
+    margin: 2px 0;
+    padding: 5px;
+  }
+
+  .navLinks:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

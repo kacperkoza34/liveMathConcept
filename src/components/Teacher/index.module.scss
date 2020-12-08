@@ -1,0 +1,27 @@
+@import "../../styles/global.scss";
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  .header {
+    margin: 30px;
+  }
+
+  .mainWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .contentWrapper {
+    width: 100%;
+    padding: 100px 0;
+    padding: 35px;
+    transition: 0.4s;
+  }
+}
