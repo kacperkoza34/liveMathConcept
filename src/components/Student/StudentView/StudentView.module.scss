@@ -1,0 +1,23 @@
+.root {
+  background-color: #282c34;
+  width: 100%;
+  min-height: 453px;
+  color: white;
+
+  .component {
+    padding: 5px 10px 5px 5px;
+
+    h1 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+    }
+  }
+}

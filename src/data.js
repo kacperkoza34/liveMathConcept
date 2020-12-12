@@ -2,7 +2,32 @@ export default {
   liveMath: [
     {
       title: "LiveMath",
-      text: "LiveMath to aplikacja umożliwiająca zdalną naukę matemtyki"
+      text:
+        "LiveMath to aplikacja umożliwiająca zdalną test `  2/3+4  `  naukę matemtyki"
+    },
+    {
+      task: {
+        text: "1.1 Oblicz",
+        subTasks: ["a) `2+3`", "b) `3+6`"]
+      }
+    },
+    {
+      task: {
+        text: "1.2 Oblicz",
+        subTasks: ["a) `12^2+4`", "b) `3+6`"]
+      }
+    },
+    {
+      task: {
+        text: "1.3 Oblicz",
+        subTasks: ["a) `2+3`", "b) `3+6`"]
+      }
+    },
+    {
+      task: {
+        text: "1.4 Oblicz",
+        subTasks: ["a) `2+3`", "b) `3+6`"]
+      }
     },
     {
       link: {
@@ -10,6 +35,7 @@ export default {
         src: "https://live-math-poc.herokuapp.com/register/firstline"
       }
     },
+    { math: "2/3+4/5" },
     {
       subtitle: "Jak to działa?",
       text:

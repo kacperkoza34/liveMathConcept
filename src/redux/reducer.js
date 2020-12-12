@@ -1,4 +1,4 @@
-import { SET_PAGE } from "./actions.js";
+import { SET_PAGE, SET_POSITION, SET_ARTICLE_HEIGTH } from "./actions.js";
 
 export default function reducer(statePart = [], action = {}) {
   switch (action.type) {
@@ -6,6 +6,17 @@ export default function reducer(statePart = [], action = {}) {
       return {
         ...statePart,
         page: action.payload
+      };
+    case SET_POSITION:
+      return {
+        ...statePart,
+        position: action.payload
+      };
+    case SET_ARTICLE_HEIGTH:
+      console.log(action.payload);
+      return {
+        ...statePart,
+        articleHeigth: action.payload
       };
     default:
       return statePart;

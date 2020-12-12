@@ -5,7 +5,8 @@ import reducer from "./reducer";
 const initialState = {
   state: {
     page: 0,
-    position: 0
+    position: 0,
+    articleHeigth: 0
   }
 };
 

@@ -1,0 +1,57 @@
+.root {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.teacher {
+  @extend .root;
+  .text {
+    min-height: 30px;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .actions {
+    margin: 20px 0 0 0;
+
+    button:first-child {
+      margin: 0 0 5px 0;
+    }
+
+    button {
+      margin: 0 0 0 5px;
+      font-size: 16px;
+      padding: 5px;
+      color: inherit;
+      border: 2px solid #fff;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background: rgba(#fff, 0.1);
+      }
+    }
+  }
+  .icon {
+    display: none;
+  }
+
+  &:hover {
+    .icon {
+      display: block;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.student {
+  @extend .root;
+  .text {
+    margin: 0 0 10px 0;
+  }
+}
