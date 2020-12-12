@@ -13,6 +13,10 @@
     justify-content: space-between;
   }
 
+  .subTask {
+    margin: 8px 0;
+  }
+
   .actions {
     margin: 20px 0 0 0;
 
@@ -53,5 +57,26 @@
   @extend .root;
   .text {
     margin: 0 0 10px 0;
+  }
+  .actions {
+    margin: 20px 0 0 0;
+
+    button:first-child {
+      margin: 0 0 5px 0;
+    }
+
+    button {
+      margin: 0 0 0 5px;
+      font-size: 16px;
+      padding: 5px;
+      color: inherit;
+      border: 2px solid #fff;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background: rgba(#fff, 0.1);
+      }
+    }
   }
 }

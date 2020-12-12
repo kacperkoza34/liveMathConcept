@@ -8,7 +8,7 @@ const App = () => {
     <div className={styles.root}>
       <div className={styles.student}>
         <div className={styles.title}>
-          <h1>Widok ucznia</h1>
+          <h1>Ania Kowalska</h1>
         </div>
         <div className={styles.app}>
           <Student />

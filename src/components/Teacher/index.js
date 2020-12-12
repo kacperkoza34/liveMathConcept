@@ -5,6 +5,7 @@ import Nav from "./Nav/Nav";
 import data from "../../data";
 import Article from "./Features/Article/Article";
 import ScrollTop from "./Features/ScrollTop/ScrollTop";
+import Task from "../GlobalFeatures/Task/Task";
 
 function App() {
   return (
@@ -12,8 +13,6 @@ function App() {
       <div className={styles.mainWrapper}>
         <Router basename={process.env.PUBLIC_URL}>
           <Nav />
-          <ScrollTop />
-
           <div className={styles.contentWrapper}>
             <Switch>
               <Route

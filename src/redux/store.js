@@ -6,7 +6,10 @@ const initialState = {
   state: {
     page: 0,
     position: 0,
-    articleHeigth: 0
+    currentTask: {},
+    resolvedTask: {
+      photoSrc: ""
+    }
   }
 };
 

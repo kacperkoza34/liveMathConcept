@@ -20,7 +20,7 @@ const navLinks = [
   { title: " Email verification", link: "/LiveMathDoc/11" }
 ];
 
-const Nav = ({ setPage }) => {
+const Nav = ({ setPage, isTaskOpen }) => {
   return (
     <nav>
       {navLinks.map(({ title, link, dev }, i) => (
@@ -37,5 +37,8 @@ const Nav = ({ setPage }) => {
     </nav>
   );
 };
+const mapStateToProps = state => ({
+  isTaskOpen: Object.keys(state.state.currentTask).length > 0 ? true : false
+});
 
 export default connect(null, { setPage })(Nav);

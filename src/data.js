@@ -6,6 +6,25 @@ export default {
         "LiveMath to aplikacja umożliwiająca zdalną test `  2/3+4  `  naukę matemtyki"
     },
     {
+      link: {
+        title: "Zarejestruj się tutaj!",
+        src: "https://live-math-poc.herokuapp.com/register/firstline"
+      }
+    },
+    { math: "2/3+4/5" },
+    {
+      subtitle: "Jak to działa?",
+      text:
+        "Aplikacja pozwala na tworzenie klas do których możemy zaprosić uczniów. Po stworzeniu klasy mamy możliwość dodawania do niej zadań. Dostępne są trzy rodzaje - zadania otwartę, zadania zamknięte, zadania prawda/fałsz. Po dodaniu zadań mamy możliwość śledzenia postępów u uczniów dzięki prostej punktacji"
+    },
+    {
+      photo: "https://i.postimg.cc/pVnbq2b4/centroid-of-triangle-animation.gif"
+    },
+    {
+      subtitle: "Widok ucznia",
+      photo: { src: "photo/22.png", minusX: 10, plusX: 10, fullView: true }
+    },
+    {
       task: {
         text: "1.1 Oblicz",
         subTasks: ["a) `2+3`", "b) `3+6`"]
@@ -30,24 +49,6 @@ export default {
       }
     },
     {
-      link: {
-        title: "Zarejestruj się tutaj!",
-        src: "https://live-math-poc.herokuapp.com/register/firstline"
-      }
-    },
-    { math: "2/3+4/5" },
-    {
-      subtitle: "Jak to działa?",
-      text:
-        "Aplikacja pozwala na tworzenie klas do których możemy zaprosić uczniów. Po stworzeniu klasy mamy możliwość dodawania do niej zadań. Dostępne są trzy rodzaje - zadania otwartę, zadania zamknięte, zadania prawda/fałsz. Po dodaniu zadań mamy możliwość śledzenia postępów u uczniów dzięki prostej punktacji",
-
-      photo: { src: "photo/1.png", minusX: 10, plusX: 10, fullView: true }
-    },
-    {
-      subtitle: "Widok ucznia",
-      photo: { src: "photo/22.png", minusX: 10, plusX: 10, fullView: true }
-    },
-    {
       subtitle: "Przykładowe zadanie ze statusem do sprawdzenia",
       photo: { src: "photo/9.png", minusX: 10, plusX: 10, fullView: true }
     }
@@ -64,6 +65,30 @@ export default {
       subtitle: "Przykład tworzenia nowego zadania",
       text: "Ponizsze zdjęcie obrazuje jak wygląda tworzenia nowego zadania",
       photo: { src: "photo/3.png", minusX: 10, plusX: 10, fullView: true }
+    },
+    {
+      task: {
+        text: "1.1 Oblicz",
+        subTasks: ["a) `2+3`", "b) `3+6`"]
+      }
+    },
+    {
+      task: {
+        text: "1.2 Oblicz",
+        subTasks: ["a) `12^2+4`", "b) `3+6`"]
+      }
+    },
+    {
+      task: {
+        text: "1.3 Oblicz",
+        subTasks: ["a) `2+3`", "b) `3+6`"]
+      }
+    },
+    {
+      task: {
+        text: "1.4 Oblicz",
+        subTasks: ["a) `2+3`", "b) `3+6`"]
+      }
     },
     {
       subtitle: "Przykład gotowego zadania",

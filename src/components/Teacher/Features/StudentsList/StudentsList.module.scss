@@ -1,0 +1,23 @@
+.root {
+  ul {
+    padding: 0;
+
+    .active {
+      &:hover {
+        border-radius: 3px;
+        cursor: pointer;
+        background: rgba(#fff, 0.1);
+      }
+    }
+
+    li {
+      padding: 3px;
+      font-size: 16px;
+
+      span {
+        margin: 0 0 0 5px;
+        color: green;
+      }
+    }
+  }
+}

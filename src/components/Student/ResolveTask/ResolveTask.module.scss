@@ -1,0 +1,39 @@
+.root {
+  margin: 10px;
+
+  .photo {
+    width: 220px;
+    margin: 10px 0;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  button {
+    margin: 15px 0;
+    font-size: 14px;
+    padding: 5px;
+    color: inherit;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      background: rgba(#fff, 0.1);
+    }
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* Remove default arrow */
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  background-color: rgba(#fff, 0);
+  outline: none;
+  //background-image: url(...);   /* Add custom arrow */
+}
