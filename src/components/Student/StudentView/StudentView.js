@@ -28,7 +28,7 @@ const StudentView = ({ page, position, currentTask }) => {
             return (
               i === page &&
               data[key].map(
-                ({ title, text, photo, subtitle, math, task }, i) => (
+                ({ title, text, photo, subtitle, math, task, frame }, i) => (
                   <div className={styles.component} key={i}>
                     <div ref={i == position ? scrollToThisRef : null}></div>
                     {title && <h1>{title}</h1>}
@@ -36,6 +36,11 @@ const StudentView = ({ page, position, currentTask }) => {
                     {text && (
                       <p>
                         <MathJax content={text} font={14} />
+                      </p>
+                    )}
+                    {frame && (
+                      <p className={styles.frame}>
+                        <MathJax content={frame} font={14} />
                       </p>
                     )}
                     {math && <MathJax content={"`" + math + "`"} font={14} />}

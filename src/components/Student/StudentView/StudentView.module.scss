@@ -1,6 +1,7 @@
 .root {
   background-color: #282c34;
   color: white;
+  margin: 8px;
 
   .component {
     padding: 5px 10px 5px 5px;
@@ -16,6 +17,11 @@
     }
     a {
       font-size: 12px;
+    }
+    .frame {
+      background: #636e72;
+      padding: 10px;
+      border-radius: 5px;
     }
   }
 }

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { connect } from "react-redux";
 import { setPage } from "../../../redux/actions";
+import data from "../../../data";
 
 const navLinks = [
   { title: "LiveMath", link: "/LiveMathDoc/1" },
@@ -23,15 +24,15 @@ const navLinks = [
 const Nav = ({ setPage, isTaskOpen }) => {
   return (
     <nav>
-      {navLinks.map(({ title, link, dev }, i) => (
+      {Object.keys(data).map((item, i) => (
         <NavLink
-          key={link}
+          key={item}
           className={styles.navLinks}
           activeStyle={{ background: "rgba(0, 0, 0, 0.5)" }}
-          to={process.env.PUBLIC_URL + link}
+          to={process.env.PUBLIC_URL + item}
           onClick={() => setPage(i)}
         >
-          {title}
+          {data[item][0].title}
         </NavLink>
       ))}
     </nav>

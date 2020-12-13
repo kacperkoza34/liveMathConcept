@@ -8,6 +8,7 @@ import ScrollTop from "./Features/ScrollTop/ScrollTop";
 import Task from "../GlobalFeatures/Task/Task";
 
 function App() {
+  Object.keys(data).map(item => console.log(item));
   return (
     <div className={styles.App}>
       <div className={styles.mainWrapper}>
@@ -15,70 +16,18 @@ function App() {
           <Nav />
           <div className={styles.contentWrapper}>
             <Switch>
-              <Route
-                exact
-                path="/LiveMathDoc"
-                component={() => <Article content={data.liveMath} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/1"
-                component={() => <Article content={data.liveMath} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/2"
-                component={() => <Article content={data.openTask} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/3"
-                component={() => <Article content={data.closeTask} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/4"
-                component={() => <Article content={data.booleanTask} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/5"
-                component={() => <Article content={data.checkTask} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/6"
-                component={() => <Article content={data.mern} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/7"
-                component={() => <Article content={data.reduxAxios} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/8"
-                component={() => <Article content={data.authorization} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/9"
-                component={() => <Article content={data.security} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/10"
-                component={() => <Article content={data.rwd} />}
-              />
-              <Route
-                exact
-                path="/LiveMathDoc/11"
-                component={() => <Article content={data.emailVerification} />}
-              />
+              {Object.keys(data).map((item, i) => (
+                <Route
+                  exact
+                  path={`/LiveMathDoc/${item}`}
+                  component={() => <Article content={data[item]} />}
+                />
+              ))}
+
               <Route
                 exact
                 path="/LiveMathDoc/*"
-                component={() => <Article content={data.liveMath} />}
+                component={() => <Article content={data.article1} />}
               />
             </Switch>
           </div>

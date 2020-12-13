@@ -17,7 +17,7 @@ const Task = ({
   const [actions, toggleActions] = React.useState(false);
   const { text, subTasks } = content;
   return (
-    <div>
+    <div style={{ lineHeight: `${content.lineMobile}px` }}>
       {!actionsAvailable ? (
         <div className={styles.student}>
           <div>
@@ -26,12 +26,15 @@ const Task = ({
             </div>
           </div>
           {subTasks.length > 0 &&
-            subTasks.map(item => <MathJax content={item} font={fontSize} />)}
+            subTasks.map(item => (
+              <div className={styles.subTasks}>
+                {" "}
+                <MathJax content={item} font={fontSize} />
+              </div>
+            ))}
           {exitActions && (
             <div className={styles.actions}>
-              <button onClick={() => clearCurrentTask()}>
-                Przenieś do listy zadań
-              </button>
+              <button onClick={() => clearCurrentTask()}>Zakończ</button>
             </div>
           )}
         </div>
@@ -39,12 +42,6 @@ const Task = ({
         <div className={styles.teacher}>
           <div className={styles.text}>
             <MathJax content={content.text} font={fontSize} />
-            <div
-              onClick={() => toggleActions(state => !state)}
-              className={styles.icon}
-            >
-              <FontAwesomeIcon icon={actions ? faTimes : faPen} />
-            </div>
           </div>
           {subTasks.length > 0 &&
             subTasks.map(item => (
@@ -52,7 +49,12 @@ const Task = ({
                 <MathJax content={item} font={fontSize} />
               </div>
             ))}
-
+          <div
+            onClick={() => toggleActions(state => !state)}
+            className={styles.icon}
+          >
+            <FontAwesomeIcon icon={actions ? faTimes : faPen} />
+          </div>
           {actions && (
             <div className={styles.actions}>
               <button
